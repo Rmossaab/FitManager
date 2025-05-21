@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitManager - Gestion de cours de fitness</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="landing-page">
+    <!-- Header -->
+    <header class="landing-header">
+        <div class="container">
+            <div class="landing-nav">
+                <div class="logo">
+                    <h1>FitManager</h1>
+                </div>
+                <div class="nav-buttons">
+                    <a href="login.php" class="btn btn-light">Connexion</a>
+                    <a href="register.php" class="btn btn-primary">Inscription</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Gérez vos cours de fitness en toute simplicité</h1>
+                <p>FitManager est une plateforme complète pour la gestion de cours de fitness, conçue pour les coachs, les membres et les administrateurs.</p>
+                <div class="hero-buttons">
+                    <a href="register.php" class="btn btn-primary btn-lg">
+                        <i class="fas fa-user-plus"></i> Commencer maintenant
+                    </a>
+                    <a href="#features" class="btn btn-outline btn-lg">
+                        <i class="fas fa-info-circle"></i> En savoir plus
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./logo.png" alt="FitManager illustration" width="100px">
+            </div>
+        </div>
+    </section>
+
+    
+
+   
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" aria-label="Retour en haut de page">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+   
+    <script>
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
